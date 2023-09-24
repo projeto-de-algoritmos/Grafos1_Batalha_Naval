@@ -193,28 +193,28 @@ export default function PaginaInicial() {
     }
 
 
-    function apresentarTabuleiro({ tabuleiro, dono }) {
-        // Retorna o resultado da expressão
-        return (
+      function apresentarTabuleiro({ tabuleiro, dono }) {
+          // Retorna o resultado da expressão
+          return (
 
-            // map está sendo usado para percorrer cada linha (line) e seu índice (y_index) no tabuleiro
-            tabuleiro.map((line, y_index) => (
-                <div className='line' key={y_index}>
+              // map está sendo usado para percorrer cada linha (line) e seu índice (y_index) no tabuleiro
+              tabuleiro.map((line, y_index) => (
+                  <div className='line' key={y_index}>
 
-                    {line.map((item, x_index) => {
-                        return <button
-                            key={y_index + "" + x_index}
-                            className={"ship-" + item}
-                            disabled={dono == turn}
-                            onClick={() => verifica(y_index, x_index, dono)}>
+                      {line.map((item, x_index) => {
+                          return <button
+                              key={y_index + "" + x_index}
+                              className={"ship-" + item}
+                              disabled={dono == turn}
+                              onClick={() => verifica(y_index, x_index, dono)}>
 
-                            <imagem owner={dono} value={item} />
-                        </button>;
-                    })}
-                </div>
-            ))
-        )
-    }
+                              <imagem owner={dono} value={item} />
+                          </button>;
+                      })}
+                  </div>
+              ))
+          )
+      }
 
 
     if (enemyScore >= 15) {
