@@ -1,4 +1,7 @@
-import React, { useEffect, useState } from "react"
+import { useState } from "react"
+import { useDispatch } from "react-redux";
+import { addPlayerScore } from "../../redux/gameSlice";
+
 import icone_onda from "../../assets/ondas.png"
 import icone_navio from "../../assets/navio.png"
 import "./player-board.css"
@@ -6,6 +9,7 @@ import "./player-board.css"
 export function PlayerBoard({ tabuleiro }) {
 
   const [toggleRender, setToggleRender] = useState(false);
+  const dispatch = useDispatch();
 
   function verificaItem(x_index, y_index) {
     switch (tabuleiro[y_index][x_index]) {
@@ -15,6 +19,7 @@ export function PlayerBoard({ tabuleiro }) {
         break
       case 1:
         tabuleiro[y_index][x_index] = 2
+        dispatch(addPlayerScore())
         setToggleRender(!toggleRender)
         break
       default:

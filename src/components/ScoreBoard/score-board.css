@@ -1,0 +1,15 @@
+.score-board{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-board--title{
+  margin: 0.5em 0 0.25em;
+}
+
+.score-board--score{
+  margin: 0;
+  font-size: 2em;
+}
