@@ -1,0 +1,28 @@
+.player-board{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-board__title{
+  width: 100%;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+.player-board__line{
+  display: flex;
+  justify-content: center;
+}
+
+.player-board__item{
+  width: 10%;
+  height: 100%;
+  border: 1px solid gray;
+}
+
+.player-board__item---1, .player-board__item--2{
+  background-color: aqua;
+  cursor: default;
+}

@@ -1,15 +1,15 @@
-import { useState } from 'react'
 import './App.css'
-import { Board } from './components/Board/board'
+import { PlayerBoard } from './components/PlayerBoard/playerBoard'
+import { BotBoard } from './components/BotBoard/botBoard'
 import tabuleiro from './Tabuleiro'
 
 function App() {
 
   return (
     <div className='app'>
-      <Board tabuleiro={tabuleiro()}/>
+      <PlayerBoard tabuleiro={tabuleiro()}/>
 
-      <Board tabuleiro={tabuleiro()}/>
+      <BotBoard tabuleiro={tabuleiro()}/>
     </div>
   )
 }
