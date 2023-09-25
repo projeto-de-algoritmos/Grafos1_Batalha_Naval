@@ -5,10 +5,20 @@
   align-items: center;
 }
 
+.player-board--small{
+  transform: scale(0.9);
+  transition: all 0.5s;
+}
+
 .player-board__title{
   width: 100%;
   text-align: center;
   margin: 0.5em 0;
+}
+
+.player-board__title--unselected{
+  font-weight: 400;
+  transition: all 0.2s;   
 }
 
 .player-board__line{
@@ -24,5 +34,9 @@
 
 .player-board__item---1, .player-board__item--2{
   background-color: aqua;
+  cursor: default;
+}
+
+#disabled-input{
   cursor: default;
 }

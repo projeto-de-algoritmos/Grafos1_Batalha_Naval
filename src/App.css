@@ -10,5 +10,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+}
 
+.boards-container__player{
+  width: 45%;
+  transform: scale(0.9);
 }

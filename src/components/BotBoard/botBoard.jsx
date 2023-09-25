@@ -35,7 +35,7 @@ export function BotBoard({ tabuleiro }) {
                   <input
                     type="image"
                     src={item == 1 || item == 2 ? icone_navio : icone_onda}
-
+                    disabled
                     key={y_index + "" + x_index}
                     alt="item"
                     // o segundo class depende do valor do item
