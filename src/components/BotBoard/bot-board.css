@@ -3,12 +3,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.5s;
+}
+
+.bot-board--small{
+  transform: scale(0.9);
 }
 
 .bot-board__title{
   width: 100%;
   text-align: center;
   margin: 0.5em 0;
+  
+}
+
+.bot-board__title--thinner{
+  font-weight: 300;
+     
 }
 
 .bot-board__line{

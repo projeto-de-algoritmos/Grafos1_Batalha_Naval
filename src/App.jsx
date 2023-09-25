@@ -13,10 +13,7 @@ function App() {
       <ScoreBoard />
       
       <div className="boards-container">
-        <PlayerBoard 
-          tabuleiro={tabuleiro()} 
-        />
-
+        <PlayerBoard tabuleiro={tabuleiro()}/>
 
         <BotBoard tabuleiro={tabuleiro()}/>
       </div>

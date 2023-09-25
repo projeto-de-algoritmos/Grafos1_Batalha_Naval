@@ -3,22 +3,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.5s;
 }
 
 .player-board--small{
   transform: scale(0.9);
-  transition: all 0.5s;
 }
 
 .player-board__title{
   width: 100%;
   text-align: center;
   margin: 0.5em 0;
+  transition: all 0.2s; 
 }
 
-.player-board__title--unselected{
-  font-weight: 400;
-  transition: all 0.2s;   
+.player-board__title--thinner{
+  font-weight: 300;
 }
 
 .player-board__line{

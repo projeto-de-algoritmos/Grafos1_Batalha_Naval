@@ -28,11 +28,17 @@ export function PlayerBoard({ tabuleiro }) {
     }
   }
 
+  function isInputDisabled(inputItem) {
+    if (!isPlayerTurn) return true;
+    if (inputItem == 2 || inputItem == -1) return true;
+    return false;
+  }
+
   return (
       // map está sendo usado para percorrer cada linha (line) e seu índice (y_index) no tabuleiro
       <div className={`player-board ${!isPlayerTurn && "player-board--small"}`}>
         <h1 
-          className={`player-board__title ${!isPlayerTurn ? "player-board__title--unselected": ""}`}
+          className={`player-board__title ${!isPlayerTurn ? "player-board__title--thinner": ""}`}
           >
           Jogador
         </h1>
@@ -46,7 +52,7 @@ export function PlayerBoard({ tabuleiro }) {
                     type="image"
                     src={item == 2 ? icone_navio : icone_onda}
                     key={y_index + "" + x_index}
-                    disabled={!isPlayerTurn}
+                    disabled={isInputDisabled(item)}
               
                     // o segundo class depende do valor do item
                     // 0 ou 1 = ainda não foi visitado
