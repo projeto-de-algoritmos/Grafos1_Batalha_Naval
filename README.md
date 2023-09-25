@@ -6,14 +6,20 @@
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| 20/2016847  |  Luciano de Freitas Melo |
-| xx/xxxxxx  |  Maria Abritta |
+| 202016847  |  Luciano de Freitas Melo |
+| 202016945  |  Maria Eduarda dos Santos Abritta Ferreira |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+O objetivo do projeto foi aplicar os conceitos aprendidos de grafos em um jogo de batalha naval. O jogo consiste em um tabuleiro de 10x10, onde cada jogador tem 6 navios de tamanhos diferentes. Cada jogador deve tentar acertar os navios do adversário. O jogo acaba quando um dos jogadores acertar todos os navios do adversário.
+
+Foram aplicados os conceitos de matriz de adjacência e busca em largura para a implementação do jogo.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![screenshot do inicio do jogo](./src/assets/screenshot-1.png)
+
+![screenshot do oponente jogando](./src/assets/screenshot-2.png)
+
+![screenshot de um jogo em andamento](./src/assets/screenshot-3.png)
 
 ## Instalação 
 **Linguagem**: Javascript<br>
@@ -47,5 +53,5 @@ O projeto abrirá na url:
 http://localhost:3000/Grafos1_Batalha_Naval/
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+O jogador escolhe uma das casas do tabuleiro para atirar. Se acertar um navio, a casa ficará com a figura de um navio. Se errar, a casa ficará azul. Após isso, o jogador deve esperar o oponente realizar sua jogada para poder atirar novamente. O jogo acaba quando um dos jogadores acertar todos os navios do adversário.
 
