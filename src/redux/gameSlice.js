@@ -4,6 +4,7 @@ const initialState = {
   playerScore: 0,
   botScore: 0,
   isPlayerTurn: true,
+  isGameOver: 0
 }
 
 export const gameSlice = createSlice({
@@ -18,10 +19,13 @@ export const gameSlice = createSlice({
     },
     changeTurn: (state) => {
       state.isPlayerTurn = !state.isPlayerTurn
+    },
+    endGame: (state) => {
+      state.playerScore == 12 ? state.isGameOver = 1 : state.isGameOver = -1
     }
   }
 })
 
-export const { addPlayerScore, addBotScore, changeTurn } = gameSlice.actions;
+export const { addPlayerScore, addBotScore, changeTurn, endGame } = gameSlice.actions;
 
 export default gameSlice.reducer;

@@ -11,11 +11,8 @@ export function BotBoard({ tabuleiro }) {
 
   const chute = botChutaItem(tabuleiro);
 
-  console.log(chute);
-
   const isPlayerTurn = useSelector((state) => state.game.isPlayerTurn);
   const dispatch = useDispatch();
-  const [toggleRender, setToggleRender] = useState(false);
 
 
   function verificaItem(x_index, y_index) {
