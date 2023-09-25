@@ -36,7 +36,7 @@ export function BotBoard({ tabuleiro }) {
       setTimeout(() => {
         verificaItem(chute[0], chute[1]); 
         dispatch(changeTurn())
-      }, 3000)
+      }, 2000)
     }
   }, [isPlayerTurn])
 

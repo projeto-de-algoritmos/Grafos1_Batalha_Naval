@@ -23,7 +23,13 @@ return(
     text: message.text,
     icon: message.icon,
     position: 'center',
+    confirmButtonText: "Vamos!",
+    confirmButtonColor: 'purple',
+    allowOutsideClick: false,
+    allowEscapeKey: false,
+
+  }).then(function () {
+    location.reload(true)
   })
-  
 )
 }
