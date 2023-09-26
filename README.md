@@ -10,6 +10,8 @@
 | 202016945  |  Maria Eduarda dos Santos Abritta Ferreira |
 
 ## Sobre 
+Vídeo explicativo: https://youtu.be/6JiOqzf1rQM
+
 O objetivo do projeto foi aplicar os conceitos aprendidos de grafos em um jogo de batalha naval. O jogo consiste em um tabuleiro de 10x10, onde cada jogador tem 6 navios de tamanhos diferentes. Cada jogador deve tentar acertar os navios do adversário. O jogo acaba quando um dos jogadores acertar todos os navios do adversário.
 
 Foram aplicados os conceitos de matriz de adjacência e busca em largura para a implementação do jogo.
