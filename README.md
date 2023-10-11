@@ -12,9 +12,7 @@
 ## Sobre 
 Vídeo explicativo: https://youtu.be/6JiOqzf1rQM
 
-<video width="640" height="360" controls>
-  <source src="./src/assets/Grafos1 Batalha Naval.mp4" type="video/mp4">
-</video>
+O vídeo também está disponível [nesse repositório](https://raw.githubusercontent.com/projeto-de-algoritmos/Grafos1_Batalha_Naval/master/src/assets/Grafos1%20Batalha%20Naval.mp4).
 
 O objetivo do projeto foi aplicar os conceitos aprendidos de grafos em um jogo de batalha naval. O jogo consiste em um tabuleiro de 10x10, onde cada jogador tem 6 navios de tamanhos diferentes. Cada jogador deve tentar acertar os navios do adversário. O jogo acaba quando um dos jogadores acertar todos os navios do adversário.
 
